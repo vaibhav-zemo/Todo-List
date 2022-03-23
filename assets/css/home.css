@@ -1,0 +1,219 @@
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+#des {
+    border: solid 2px grey;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#des #des_input {
+    border: none;
+}
+
+#drop-down-list {
+    display: inline-block;
+    width: 50%;
+    height: 33px;
+    border-bottom: solid 2px grey;
+    padding: 5px;
+    position: relative;
+}
+
+#drop-down-list label {
+    display: block;
+}
+
+#drop-down-list input {
+    border: none;
+    text-decoration: none;
+    width: 23%;
+}
+
+#drop-down-list #drop_icon {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    top: -20px;
+    right: 20px;
+}
+
+#drop-down-list ul li {
+    list-style: none;
+}
+
+#list {
+    border: solid 2px blue;
+    position: absolute;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: -7px;
+    text-align: left;
+    padding: 0px;
+    display: none;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+
+#list li {
+    padding-left: 10px;
+}
+
+#list li:hover {
+    background-color: lightseagreen;
+}
+
+/* #drop_icon:hover ~ #list{
+    display:block;
+} */
+
+#date {
+    display: inline-block;
+    border: solid 2px grey;
+    width: 48.3%;
+    margin: 0px;
+    padding: 5px;
+    border-top: none;
+    position: absolute;
+    height: 33px;
+}
+
+
+
+#date label {
+    display: block;
+}
+
+#date #date_input {
+    border: none;
+}
+
+#button {
+    margin: auto;
+    margin-top: 10px;
+    width: 250px;
+}
+
+/* Button */
+#button #Add {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    height: 50px;
+    width: 130px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#button #delete {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    height: 26px;
+    width: 140px;
+    display: inline-block;
+    padding-left: 0.3rem;
+    text-decoration: none;
+}
+
+#button {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+    border-bottom: solid 2px grey;
+    padding-bottom: 44px;
+    margin-bottom: 10px;
+}
+
+#submit_div {
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+#delete_div {
+    position: relative;
+    display: inline-block;
+}
+
+#submit_icon {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 0.5em;
+}
+
+#delete_icon {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    left: 0.5em;
+    top: -0.4rem;
+}
+
+
+
+/* Display */
+
+#display li {
+    list-style: none;
+    margin-top: 15px;
+    border-bottom: solid 2px grey;
+    position: relative;
+    margin-left: -7px;
+    width: 98%;
+}
+
+#display_des {
+    font-size: larger;
+    display: inline-block;
+    margin: 2px;
+    margin-left: 1rem;
+}
+
+#display_date {
+    color: grey;
+    margin: 2px;
+    margin-left: 3rem;
+}
+
+#date_icon{
+    position: relative;
+    margin-top: 1rem;
+}
+
+#icon_date{
+    color: grey;
+    font-size: 20px;
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+}
+
+#display_category {
+    margin: 2px;
+    display: inline-block;
+    background-color: aqua;
+    color: white;
+    position: absolute;
+    right: 5%;
+    width: 7%;
+    height: 26%;
+    padding: 6px;
+    text-align: center;
+}
+
+#box {
+    height: 20px;
+    width: 20px;
+}

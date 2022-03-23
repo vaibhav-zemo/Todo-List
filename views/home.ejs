@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0e5617169c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>ToDo App</h1>
+    </header>
+
+
+    <form action="/create-list" method="post">
+        <div id="des">
+            <label for="des">Description</label>
+            <input type="text" name="des" id="des_input" placeholder="What do you need to do?" required>
+        </div>
+
+        <div id="drop-down-list">
+            <label for="input_list">Category</label>
+            <input type="text" name="input_list" id="input_list" placeholder="Choose a category" required>
+
+            <p id="drop_icon"><i class="fas fa-caret-down"></i></p>
+            <ul id="list">
+                <li class="categories">Choose a category</li>
+                <li class="categories">Personal</li>
+                <li class="categories">Work</li>
+                <li class="categories">School</li>
+                <li class="categories">Cleaning</li>
+                <li class="categories">Other</li>
+            </ul>
+        </div>
+
+        <div id="date">
+            <label for="date">Due Date</label>
+            <input type="date" name="date" id="date_input"  required>
+        </div>
+
+        <div id="button">
+            <div id="submit_div">
+                <p id="submit_icon"><i class="fas fa-plus"></i></p>
+                <input type="submit" id="Add" value="Add Task">
+            </div>
+            
+            <div id="delete_div">
+                <a href="/delete-list/?id" id="delete">
+                    <p id="delete_icon"><i class="fas fa-trash"></i></p>
+                    <div>Delete Task</div>
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <section id="display">
+        <ul>
+            <% for(let i of to_do_list){ %>
+                <li>
+                    <input type="checkbox" name="<%=i._id%>" id="box">
+                    <p id="display_des">
+                        <%= i.description %>
+                    </p>
+
+                    <p id="display_category">
+                        <%=i.category%>
+                    </p>
+
+                    <div id="date_icon">
+                        <p id="icon_date"><i class="fas fa-calendar"></i></p>
+                        <p id="display_date">
+                            <%= i.date %>
+                        </p>
+                    </div>
+                </li>
+                <% } %>
+        </ul>
+    </section>
+
+    <script src="/js/home.js"></script>
+</body>
+
+</html>
