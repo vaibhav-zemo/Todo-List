@@ -5,6 +5,9 @@ body {
 header {
     text-align: center;
 }
+#submit_div{
+      background-color: rgb(36, 104, 163);
+}
 
 #des {
     border: solid 2px grey;
@@ -102,12 +105,13 @@ header {
 
 /* Button */
 #button #Add {
-    background-color: grey;
-    color: white;
-    border: none;
+    background-color: rgb(113, 195, 216);
+    color: rgb(255, 255, 255);
+    border-radius: 1px solid gray;
     padding: 10px;
     font-size: large;
     height: 50px;
+    cursor:pointer;
     width: 130px;
     display: inline-block;
     cursor: pointer;
@@ -115,9 +119,10 @@ header {
 
 #button #delete {
     cursor: pointer;
-    background-color: red;
+    background-color: rgb(154, 254, 206);
     color: white;
     padding: 10px;
+    border-radius: 2px solid gray;
     font-size: large;
     height: 26px;
     width: 140px;
