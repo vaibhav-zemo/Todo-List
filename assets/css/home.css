@@ -1,3 +1,7 @@
+:root {
+    --border-button: rgb(107, 107, 107);
+}
+
 body {
     margin: 0px;
 }
@@ -10,7 +14,7 @@ header {
 }
 
 #des {
-    border: solid 2px grey;
+    border: solid 2px var(--border-button);
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -24,7 +28,7 @@ header {
     display: inline-block;
     width: 50%;
     height: 33px;
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px var(--border-button);
     padding: 5px;
     position: relative;
 }
@@ -78,8 +82,7 @@ header {
 
 #date {
     display: inline-block;
-    border: solid 2px grey;
-    width: 48.3%;
+    border: solid 2px var(--border-button);
     margin: 0px;
     padding: 5px;
     border-top: none;
@@ -107,7 +110,7 @@ header {
 #button #Add {
     background-color: rgb(113, 195, 216);
     color: rgb(255, 255, 255);
-    border-radius: 1px solid gray;
+    border-radius: 1px solid var(--border-button);
     padding: 10px;
     font-size: large;
     height: 50px;
@@ -122,7 +125,7 @@ header {
     background-color: rgb(154, 254, 206);
     color: white;
     padding: 10px;
-    border-radius: 2px solid gray;
+    border-radius: 2px solid var(--border-button);
     font-size: large;
     height: 26px;
     width: 140px;
@@ -135,7 +138,7 @@ header {
     width: 95%;
     margin: 40px auto;
     text-align: center;
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px var(--border-button);
     padding-bottom: 44px;
     margin-bottom: 10px;
 }
@@ -172,8 +175,8 @@ header {
 
 #display li {
     list-style: none;
-    margin-top: 15px;
-    border-bottom: solid 2px grey;
+    margin-top: 25px;
+    border-bottom: solid 2px var(--border-button);
     position: relative;
     margin-left: -7px;
     width: 98%;
@@ -182,23 +185,23 @@ header {
 #display_des {
     font-size: larger;
     display: inline-block;
-    margin: 2px;
-    margin-left: 1rem;
+    margin: 3px;
+    margin-left: 1.5rem;
 }
 
 #display_date {
-    color: grey;
+    color: var(--border-button);
     margin: 2px;
     margin-left: 3rem;
 }
 
 #date_icon{
     position: relative;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 #icon_date{
-    color: grey;
+    color: var(--border-button);
     font-size: 20px;
     position: absolute;
     top: -1.5rem;
